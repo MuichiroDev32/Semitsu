@@ -108,12 +108,12 @@ def menu():
                                 print('\033[1;32m [=]\033[1;37m Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                                 linex()
                                 input('\033[1;32m [=]\033[1;37m Press enter to back ')
-                                os.system('python POWER.py')
+                                os.system('python Semitsu.py')
                         elif xd in ['2','02']:
                                 import dump
                                 dump.Main()
                         elif xd in ['3','03']:
-                                os.system('xdg-open https://www.facebook.com/profile.php?id=100081014890502')
+                                os.system('xdg-open https://www.facebook.com/jaymar.dev.00')
                         elif xd in ['0','00']:
                         	    exit() 
                         
