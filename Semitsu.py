@@ -67,7 +67,7 @@ def menu():
         
                 x = ("sex")
                 if x == ("sex"):
-                        print(' \033[1;32m[1] \033[1;37mFile cloning\n \033[1;32m[2] \033[1;37mCreate File\n \033[1;32m[2] \033[1;37mAdmin Contact \n \033[1;32m[0] \033[1;37mExit ')
+                        print(' \033[1;32m[1] \033[1;37mFile cloning\n \033[1;32m[2] \033[1;37mCreate File\n \033[1;32m[3] \033[1;37mAdmin Contact \n \033[1;32m[0] \033[1;37mExit ')
                         linex()
                         xd=input('\033[1;32m [=] \033[1;37mCHOSE \033[1;31m:\033[1;32m  ')
                         if xd in ['1','01']:
