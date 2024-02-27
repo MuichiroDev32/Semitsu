@@ -52,7 +52,7 @@ def mang_check():
   except: 
     sys.exit() 
     if name == '__main__': 
-     print(logo) 
+     print('logo') 
      mang_check()
 mang_check()
 
